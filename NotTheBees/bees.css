@@ -1,0 +1,22 @@
+img {
+  /* you may need to scale your jar as the images we use are quite large. Note, the translate keeps your jar centered */
+  /* transform: translate(-50%, 0px) scale(3) !important; */
+    position: absolute;
+    bottom: 40px;
+    transform: translate(-50%, 10%) scale(1) !important;
+    transform-origin: bottom center;
+    left: 50%;
+    padding-right: 12px;
+  	z-index:0 !important;
+  /* you may also adjust positioning here */
+  /* bottom: 20px; */
+/* left: 95% !important;*/
+}
+
+canvas {
+
+}
+
+#sl__tip__jar > #widget {
+
+}
