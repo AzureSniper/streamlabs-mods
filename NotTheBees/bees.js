@@ -5,6 +5,15 @@ var cupWidth = 140;
 var wallthickness = 30;
 var wallLength = 300;   
 
+//You can use this patter to pretty much override any of the 150+ sprite sheets. 
+//You will have to look into the settings for each though since they can have different sizes.  
+this.cheerOverride ={
+	"cheer-1":'https://i.imgur.com/h8GZizr.png',
+   //"cheer-100":''//,
+  //	"cheer-1000":'',
+  //	"cheer-5000":'',
+  //	"cheer-10000":''
+};
  
  this.calcRadians = function(d){
  	return Math.PI*d/180;
@@ -53,7 +62,7 @@ Mod initialization script. To allow multiple mods to be used at once without con
 
 //resizing the window causes the whole script to rerun.
 if(!window.scriptDaddy){
-	
+	//paranoid debugging. Ugly as sin but 4am is not my best time.
 	window.scriptDaddy = this;
     window.scriptDaddy.jarEl = jarEl;
 	window.scriptDaddy.cheerCallbacks = [];
@@ -106,7 +115,7 @@ if(!window.scriptDaddy){
  
  	
  /**
-	Title: Cheer Response
+	Title: Nic Cage Bee Cup
 	Description: 
 	Author: scriptDaddy
 	Legal: The code below is provided as is and does not promise to work with previously customized Tip Jar modules. Code is provided free of charge with no claims to compensation.
@@ -128,6 +137,16 @@ window.scriptDaddy.registerMod("cheerResponse", function(){
  
 
 setTimeout(function(){
-	 PIXI.loader.resources["https://s3-us-west-2.amazonaws.com/cdn.streamlabs.com/static/tip-jar/cheers/spritesheets/cheer/cheer-1.json_image"].texture.baseTexture.source.src='https://i.imgur.com/h8GZizr.png';
+  
+  
+  for(var key in PIXI.loader.resources){
+    for(var conKey in scriptDaddy.cheerOverride){
+      if(key.indexOf(conKey+".json_image") !== -1){
+       PIXI.loader.resources[key].texture.baseTexture.source.src = scriptDaddy.cheerOverride[conKey];
+  
+      }
+    }
+  } 
+  
 },5000);
 
