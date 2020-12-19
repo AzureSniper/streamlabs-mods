@@ -1,0 +1,77 @@
+{"frames": {
+
+"crusher-0.png":
+{
+	"frame": {"x":0,"y":0,"w":869,"h":498},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":869,"h":498},
+	"sourceSize": {"w":869,"h":498}
+},
+"crusher-1.png":
+{
+	"frame": {"x":869,"y":0,"w":869,"h":498},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":869,"h":498},
+	"sourceSize": {"w":869,"h":498}
+},
+"crusher-2.png":
+{
+	"frame": {"x":1738,"y":0,"w":869,"h":498},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":869,"h":498},
+	"sourceSize": {"w":869,"h":498}
+},
+"crusher-3.png":
+{
+	"frame": {"x":2607,"y":0,"w":869,"h":498},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":869,"h":498},
+	"sourceSize": {"w":869,"h":498}
+},
+"crusher-4.png":
+{
+	"frame": {"x":3476,"y":0,"w":869,"h":498},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":869,"h":498},
+	"sourceSize": {"w":869,"h":498}
+},
+"crusher-5.png":
+{
+	"frame": {"x":4345,"y":0,"w":869,"h":498},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":869,"h":498},
+	"sourceSize": {"w":869,"h":498}
+},
+"crusher-6.png":
+{
+	"frame": {"x":5214,"y":0,"w":869,"h":498},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":869,"h":498},
+	"sourceSize": {"w":869,"h":498}
+},
+"crusher-7.png":
+{
+	"frame": {"x":6083,"y":0,"w":869,"h":498},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":869,"h":498},
+	"sourceSize": {"w":869,"h":498}
+}},
+"animations": {
+	"crusher": ["crusher-0.png","crusher-1.png","crusher-2.png","crusher-3.png","crusher-4.png","crusher-5.png","crusher-6.png","crusher-7.png"]
+},
+"meta": { 
+	"version": "1.0",
+	"image": "crusher.png",
+	"format": "RGBA8888",
+	"size": {"w":6952,"h":498},
+	"scale": "1" 
+	}
+}
